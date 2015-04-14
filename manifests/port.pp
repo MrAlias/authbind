@@ -37,7 +37,7 @@ define authbind::port (
 ) {
   include authbind
 
-  validate_integer($port, undef, 0)
+  validate_re($port, '^\d+$')
 
   if user {
     validate_string($user)

@@ -36,7 +36,7 @@ define authbind::uid (
 ) {
   include authbind
 
-  validate_integer($uid, undef, 0)
+  validate_re($uid, '^\d+$')
   validate_hash($ports)
 
   file { "/etc/authbind/byuid/${uid}":
