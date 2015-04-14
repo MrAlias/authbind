@@ -31,7 +31,11 @@ class authbind (
 
   validate_re($_version, ['latest$', '^1.2.0$', '^2.1.1$',])
 
+  anchor { 'authbind::start': }
   package { 'authbind':
-    ensure => $_version,
+    ensure  => $_version,
+    require => Anchor['authbind::start'],
+    before  => Anchor['authbind::installed'],
   }
+  anchor { 'authbind::installed': }
 }
