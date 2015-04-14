@@ -4,7 +4,7 @@
   "author": "Tyler Yahn <codingalias@gmail.com>",
   "summary": "Handles installation and configuring of Authbind.",
   "license": "MIT",
-  "source": "https://github.com/MrAlias/authbind",
+  "source": "https://github.com/MrAlias/authbind.git",
   "project_page": "https://github.com/MrAlias/authbind",
   "issues_url": "https://github.com/MrAlias/authbind/issues",
   "dependencies": [
