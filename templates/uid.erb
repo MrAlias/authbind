@@ -1,0 +1,5 @@
+########### PUPPET MANAGED FILE: Expect changes to be overwritten ############
+##############################################################################
+<%- @ports.each do |port, address| -%>
+<%= address %>,<%= port %>
+<% end -%>
