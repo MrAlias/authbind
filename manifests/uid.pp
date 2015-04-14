@@ -30,7 +30,7 @@
 #
 # Copyright 2015 Tyler Yahn
 #
-class authbind::uid (
+define authbind::uid (
   $uid   = $name,
   $ports = undef,
 ) {

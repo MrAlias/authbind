@@ -35,7 +35,7 @@
 #
 # Copyright 2015 Tyler Yahn
 #
-class authbind::addr (
+define authbind::addr (
   $addr  = $name,
   $port  = undef,
   $user  = undef,

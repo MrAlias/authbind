@@ -30,7 +30,7 @@
 #
 # Copyright 2015 Tyler Yahn
 #
-class authbind::port (
+define authbind::port (
   $port  = $name,
   $user  = undef,
   $group = undef,
